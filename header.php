@@ -31,8 +31,9 @@
   <![endif]-->
   <?php include_once("parts-analytics.php"); ?>
 </head>
-
-<body <?php body_class(); ?>>
+<?php global $blog_id;
+	$site_id = 'site-' . $blog_id; ?>
+<body <?php body_class($site_id); ?>>
 	<header class="image">
 		<div class="row show-for-small">
 			<div class="four columns centered black_bg">
