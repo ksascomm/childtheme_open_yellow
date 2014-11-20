@@ -29,11 +29,8 @@
     <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <script src="<?php echo get_template_directory_uri() ?>/assets/javascripts/lte-ie7.js"></script>
   <![endif]-->
-  <?php include_once("parts-analytics.php"); ?>
 </head>
-<?php global $blog_id;
-	$site_id = 'site-' . $blog_id; ?>
-<body <?php body_class($site_id); ?>>
+<body <?php body_class(); ?>>
 	<header class="image">
 		<div class="row show-for-small">
 			<div class="four columns centered black_bg">
